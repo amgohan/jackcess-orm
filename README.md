@@ -121,6 +121,6 @@ You can also use :
 - public boolean removeById(E e) : remove row by id
 - public boolean removeFirst(E e) : remove the first occurence which match to e
 - public boolean save(E e) : add a new row
-- public boolean save(List<E> l) : add a list of rows
+- public boolean save(List\<E\> l) : add a list of rows
 
 [jackcess-orm-0.0.1.jar]:https://db.tt/nvlDTjc4
