@@ -5,10 +5,16 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Entity(name = "TEST_CLIENT")
+@Entity
+@Table(name = "TEST_CLIENT")
 public class Client {
 	@Column
+	@Id
+	@GeneratedValue
 	private Integer idClient;
 	
 	@Column(name = "NOM_CLIENT")
