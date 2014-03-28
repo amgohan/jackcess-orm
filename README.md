@@ -23,10 +23,16 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Entity(name = "TEST_CLIENT")
+@Entity
+@Table(name = "TEST_CLIENT")
 public class Client {
 	@Column
+	@Id
+	@GeneratedValue
 	private Integer idClient;
 	
 	@Column(name = "NOM_CLIENT")
@@ -109,5 +115,12 @@ public static void main(String[] args) throws IOException {
   }
 }
 ```
+You can also use :
+- public E findByid(Object id) : where id is Primitive wrapper class, and E the mapped POJO found
+- public E findOne() : find the first row
+- public boolean removeById(E e) : remove row by id
+- public boolean removeFirst(E e) : remove the first occurence which match to e
+- public boolean save(E e) : add a new row
+- public boolean save(List<E> l) : add a list of rows
 
 [jackcess-orm-0.0.1.jar]:https://db.tt/nvlDTjc4
