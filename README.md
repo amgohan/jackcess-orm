@@ -3,6 +3,8 @@ jackcess-orm
 
 ORM (with JPA annotations) for MS Access using jackcess
 
+![alt tag](https://dl.dropboxusercontent.com/u/19416469/orm.png)
+
 Download
 ----
 Download [jackcess-orm-0.0.1.jar]
