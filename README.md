@@ -118,7 +118,7 @@ public static void main(String[] args) throws IOException {
 }
 ```
 You can also use :
-- public E findByid(Object id) : where id is Primitive wrapper class, and E the mapped POJO found
+- public E findById(Object id) : where id is Primitive wrapper class, and E the mapped POJO found
 - public E findOne() : find the first row
 - public boolean removeById(E e) : remove row by id
 - public boolean removeFirst(E e) : remove the first occurence which match to e
